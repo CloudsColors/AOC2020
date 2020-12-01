@@ -7,15 +7,15 @@ using namespace std; // std:: is implied.
 int dayOneSolutionOne()
 {
     vector<int> inputs;
-	int temp;
+    int temp;
     unordered_map<int, int> cache;
     int index1;
     int index2;
 
-	while (cin >> temp) 
+    while (cin >> temp) 
     {
         inputs.push_back(temp);
-	}
+    }
     for(int i = 0; i < inputs.size(); i++)
     {
         int number_needed = 2020 - inputs[i];
@@ -35,16 +35,16 @@ int dayOneSolutionOne()
 int dayOneSolutionTwo()
 {
     vector<int> inputs;
-	int temp;
+    int temp;
     unordered_map<int, int> cache;
     int index1;
     int index2;
     int index3;
 
-	while (cin >> temp) 
+    while (cin >> temp) 
     {
         inputs.push_back(temp);
-	}
+    }
     for(int i = 0; i < inputs.size(); i++)
     {
         int first_subtraction = 2020 - inputs[i];
