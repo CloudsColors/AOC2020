@@ -46,7 +46,8 @@ int dayTwoSolutionTwo()
     while(!file.eof())
     {
         file >> lowerIndex >> dash >> higherIndex >> requirement >> colon >> password;
-        if(password[lowerIndex-1] == requirement ^ password[higherIndex-1] == requirement){
+        if(password[lowerIndex-1] == requirement ^ password[higherIndex-1] == requirement)
+        {
             validPasswords++;
         }
     }
