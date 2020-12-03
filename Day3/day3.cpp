@@ -21,7 +21,8 @@ int dayThreeSolutionOne()
     return 0;
 }
 
-int dayThreeSolutionTwo(){
+int dayThreeSolutionTwo()
+{
     ifstream input("data.txt");
     string eachLevel;
     vector<string> map;
@@ -34,8 +35,10 @@ int dayThreeSolutionTwo(){
     {
         map.push_back(eachLevel);        
     }
-    for(int i = 0; i < dx.size(); i++){
-        for(int z = 0; z < map.size(); z+=dy[i]){
+    for(int i = 0; i < dx.size(); i++)
+    {
+        for(int z = 0; z < map.size(); z+=dy[i])
+        {
             if(xPos >= map[z].length()) xPos -= map[z].length();
             if(map[z][xPos] == '#') nrOfTrees++;
             xPos += dx[i];
@@ -45,7 +48,8 @@ int dayThreeSolutionTwo(){
         nrOfTrees = 0;
     }
     long long results = 1;
-    for(int x : result){
+    for(int x : result)
+    {
         results = results * x;
     }
     cout << "The result is: " << results << "\n";
