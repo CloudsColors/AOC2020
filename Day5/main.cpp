@@ -6,7 +6,7 @@
 
 using namespace std;
 
-int main()
+int dayFiveSolution()
 {
     ifstream file("data.txt");
     string boardingPass;
@@ -17,7 +17,7 @@ int main()
     {
         int upperHalf = 0b01111111;
         int lowerHalf = 0b00000000;
-        int row, seat, column, seatID;
+        int row, column, seatID;
         //cout << "Upper half: " << upperHalf << "\n";
         for(int i = 0; i < boardingPass.length()-4; i++)
         {
@@ -56,4 +56,5 @@ int main()
         }
     }
     cout << "Highest seat ID was: " << highestSeatID << "\n";
+    return 0;
 }
