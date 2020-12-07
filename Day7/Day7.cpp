@@ -79,7 +79,6 @@ int main()
                 tie(nrOfBags, s) = tup;
                 if(s == currentBag)
                 {
-                    cout << it.first << " " << s << " nrOfBags: " << nrOfBags << "\n";
                     addedBags += nrOfBags;
                     containBag.push_back({it.first, nrOfBags*multiplier});
                 }
