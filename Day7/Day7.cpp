@@ -8,17 +8,6 @@
 
 using namespace std;
 
-/*
-containerMapping:
-bag_1: another bag_2 that can contain bag_1
-contain:
-for each level construct a vector of bag_2 that can contain bag_1
-609 too high
-497 too high
-
-525 too low
-*/
-
 int main()
 {
     ifstream file("data.txt");
